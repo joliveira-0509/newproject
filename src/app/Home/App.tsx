@@ -13,8 +13,9 @@ export default function App() {
                 <TouchableOpacity style={styles.button} activeOpacity={0.6} onPress={() => console.log("Tester de botão")}>
                     <Text style={styles.buttonText}>Botão teste</Text>
                 </TouchableOpacity>
+                <Event/>
             </View>
-            <Event>
+        </>
     );
 }
 
