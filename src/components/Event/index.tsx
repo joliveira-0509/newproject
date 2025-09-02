@@ -1,13 +1,13 @@
-import { View, Text, TouchableOpacity } from "react-native";
-import { styles } from './styles';
+import { styles } from "./styles";
+import {Text, TextInput, TouchableOpacity, View } from 'react-native';
 
-export default function Event() {
+export function Event() {
     return (
-        <View style={styles.container}>
-            <Text style={styles.text}>Evento do Aluno</Text>
-            <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}> + </Text>
+        <View style={styles.contener}>
+            <Text style={styles.textEvent}>Evento dos Alunos</Text>
+            <TouchableOpacity style={styles.button} activeOpacity={0.5}>
+                <Text style={styles.buttonText}>+</Text>
             </TouchableOpacity>
         </View>
-    )
+    );
 }

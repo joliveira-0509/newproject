@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "newproject",
-    "slug": "newproject",
+    "name": "my-app-mobile",
+    "slug": "my-app-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

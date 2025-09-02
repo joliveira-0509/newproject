@@ -1,24 +1,31 @@
-import { styles } from './styles';
 import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import { Event } from "../../components/Event/index"
+import { styles } from './styles';
+import { Event } from '../../components/Event';
+import { Button, Text, TextInput, Touchable, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
     return (
-        <>
-            <View style={styles.container}>
-                <Text style={styles.text}>Sai deste corpo que não te pertence</Text>
-                <TextInput style={styles.campo} placeholder='Digite se confirma' placeholderTextColor="red" />
-                <Button title='Botão' onPress={() => console.log("Teste")} color={'#005F5F'} />
-                <TouchableOpacity style={styles.button} activeOpacity={0.6} onPress={() => console.log("Tester de botão")}>
-                    <Text style={styles.buttonText}>Botão teste</Text>
-                </TouchableOpacity>
-                <Event/>
+        <View style={styles.container}>
+            <View style={styles.titulo_container}>
+                <Text style={styles.text_titul}>Meu primeiro Projeto</Text>
+                <Text style={styles.text_legend}>Vamos aprender coisas</Text>
             </View>
-        </>
+            <View style={styles.contener_person}>
+                <View style={styles.contener_input}>
+                    <TextInput style={styles.input} placeholder='Digite algo' placeholderTextColor={"grey"}/>
+                    <TouchableOpacity style={styles.button} activeOpacity={0.5}>
+                        <Text style={styles.buttonText}>+</Text>
+                    </TouchableOpacity>
+                </View>
+                <View >
+                    <Event/>
+                    <Event/>
+                    <Event/>
+                    <Event/>
+                </View>
+            </View>
+            <Button title="Salvar" onPress={() => console.log("Deu certo")}/>
+            <StatusBar style="auto" />
+        </View>
     );
 }
-
-
-
-

@@ -1,5 +1,5 @@
 {
-  "name": "newproject",
+  "name": "my-app-mobile",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
@@ -19,5 +19,19 @@
     "@types/react": "~19.0.10",
     "typescript": "~5.8.3"
   },
+  "extends": "expo/tsconfig.base",
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "jsx": "react-native",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true
+    },
   "private": true
+
 }
+
