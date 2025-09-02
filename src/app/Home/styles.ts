@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#00000',
+        backgroundColor: '#000',
         alignItems: 'center',
         justifyContent: 'center',
         marginLeft: 10,
@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
     text_titul: {
         fontSize: 28,
         fontWeight: "bold",
-        color: "black",
+        color: "#fff",
         paddingBottom: 20,
     },
 
